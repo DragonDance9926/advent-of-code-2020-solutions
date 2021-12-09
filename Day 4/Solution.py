@@ -39,16 +39,15 @@ def part2(passport):
         #hgt
         if ('hgt' in a):
             x = a['hgt'][-2:]
+            check4 = False
             if x == "cm":
                 check4 = ( (int(a['hgt'][:-2]) <= 193)) and  (int(a['hgt'][:-2]) >= 150)
             elif x == "in":
                 check4 = ( (int(a['hgt'][:-2]) <= 76)) and  (int(a['hgt'][:-2]) >= 59)
-            else:
-                check4 = False
         else:
             check4 = False
         #hcl
-        check5 = 'hcl' in a and bool(re.search("^#[[0-9]|[a-f]|[A-F]{6}",a['hcl']))
+        check5 = ('hcl' in a) and bool(re.search("^#[[0-9]|[a-f]|[A-F]{6}",a['hcl']))
         #ecl
         check6 = ('ecl' in a) and bool(re.search("amb|blu|brn|gry|grn|h",a['ecl']))
         #pid
