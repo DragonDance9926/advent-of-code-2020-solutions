@@ -5,7 +5,7 @@ with open('input.txt') as f:
     for line in f:
         lines.append(line[:-1])
         
-a = 'FBFBBFFRLR'
+#a = 'FBFBBFFRLR' test case
     
 #Part 1
 def part1(lines):
