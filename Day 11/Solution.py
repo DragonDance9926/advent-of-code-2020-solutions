@@ -82,6 +82,7 @@ def part1(mapping):
             loop = 0
     return b
 
+print(part1(mapping))
 
 def rules2(mapping, i, j):
     occ = 0
