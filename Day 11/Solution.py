@@ -82,7 +82,6 @@ def part1(mapping):
             loop = 0
     return b
 
-print(part1(mapping))
 
 def rules2(mapping, i, j):
     occ = 0
@@ -219,4 +218,7 @@ def part2(mapping):
         if a == b:
             loop = 0
     return b
+print(part1(mapping))
+with open("input.txt") as f:
+    mapping = [list(x)[:-1] for x in f.readlines()]
 print(part2(mapping))
