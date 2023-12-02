@@ -38,5 +38,7 @@ int main(){
         }
     }
     cout << "Part 2: " << ans << "\n";
+    file.close();
+    return 0;
 
 }

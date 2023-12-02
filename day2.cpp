@@ -36,5 +36,6 @@ int main(){
     }
     cout << "Part 1: " << count_if(v.begin(), v.end(), [](Password p){return p.isValid();}) << "\n";
     cout << "Part 2: " << count_if(v.begin(), v.end(), [](Password p){return p.isValid2();}) << "\n";
+    file.close();
     return 0;
 }

@@ -32,4 +32,6 @@ int main(){
         ans *= trees;
     }
     cout << "Part 2: " << ans << "\n";
+    file.close();
+    return 0;
 }
